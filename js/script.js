@@ -35,8 +35,5 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const savings= (parseInt(persent.value) / 100) * income;
     savingAmmount.innerText=savings;
     const remainingBalance =parseInt(totalMinusBalance.innerText)-savings;
-    if(totalMinusIncome>0){
-        totalMinusBalance.innerText=totalMinusIncome;
-    }
     mainingBalance.innerText= remainingBalance;
 })
